@@ -1,31 +1,52 @@
-#include <cstring>
-#include <iostream>
 
 
-using namespace std;
-
-int main()
-{
-    const int size = 10;
-    int array[size] = { 3, 1, 4, 5, 2, 10, 9, 7, 6, 8 };
-
-    for (int i = 0; i < size; i++) {
-        cout << array[i] << " ";
-    }
-    cout << endl;
-
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < 9; j++) {
-                if (array[j] > array[j + 1]) {
-                    int x = array[j]; // создали дополнительную переменную
-                    array[j] = array[j + 1]; // меняем местами
-                    array[j + 1] = x; // значения элементов
-                }
-            }
-    }
-        for (int i = 0; i < size; i++) {
-            cout << array[i] << " ";
-        }
- 
-    return 0;
-}
+//#include <iostream>
+//#include <assert.h>
+//
+//using namespace std;
+//
+//int Divide(int a, int b)
+//{
+//    assert(b && "Polnoe fuflo");
+//    int result = a / b;
+//
+//    return result;
+//}
+//
+//int main()
+//{
+//    int a = 4;
+//    int b = 0;
+//
+//    int c = Divide(a, b);
+//    cout << "Division result: " << c << endl;
+//
+//    return 0;
+//}
+//
+//
+//bool harmonic_mean(float arr[], int size, float& hmean)
+//{
+//    if (size != 0)
+//    {
+//        float sum = 0;
+//        for (int i = 0; i < size; i++)
+//        {
+//            if (arr[i] == 0.0)
+//            {
+//                hmean = 0.0;
+//                return false;
+//            }
+//            sum = sum + 1.0 / arr[i];
+//        }
+//
+//        if ((sum < -0.0001) && (sum > 0.0001))
+//        {
+//            hmean = size / sum;
+//            return true;
+//        }
+//
+//    }
+//    hmean = 0.0;
+//    return false;
+//}
